@@ -7,7 +7,7 @@ from fuzzywuzzy import fuzz
 from datetime import datetime
 from openai import OpenAI
 def get_task_output(AIPROXY_TOKEN, task):
-    client = OpenAI(api_key = "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")
+    client = OpenAI(api_key = AIPROXY_TOKEN)
     response = client.chat.completions.create(
     model="gpt-4o-mini",
     store=True,
